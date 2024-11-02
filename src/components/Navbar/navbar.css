@@ -1,0 +1,41 @@
+#logo {
+    width: clamp(5rem, 20rem, 50vw);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 3.5vh;
+    margin-left: 3vw;
+    padding-top: 0;
+}
+
+/* navbar.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Nav {
+  position: fixed; 
+  top: 0; /* Ensures it stays at the top */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 1000; /* Keeps it above other elements */
+  padding: 10px 20px; /* Adds padding for spacing */
+}
+
+.NavIcon {
+  display: none; /* Hides the NavIcon by default */
+}
+
+@media (max-width: 768px) {
+  .NavIcon {
+    display: block; /* Show the NavIcon on smaller screens */
+  }
+
+  .Nav {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

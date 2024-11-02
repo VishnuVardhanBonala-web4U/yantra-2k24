@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+ * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .home_left__89PVi {
+    background: #1e262a;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    width: 33vw;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0.5; /* Partially visible */
+    }
+}
+
+.animate-blink {
+    animation: blink 0.9s infinite; /* Fast blinking effect */
+}
